@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-03-12 09:40:31">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Training Update Set</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>15c73e8393300210303e74418bba10d0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-03-12 09:40:31</sys_created_on>
+<sys_id>f45acf0793700210303e74418bba104d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-03-12 09:40:31</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_22b9fa0793300210303e74418bba1070</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;stateCHANGESFROM3^EQ&lt;item display_value="On Hold" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="3"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;OnHold Changed&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	gs.eventQueue('inc.from.onHold.change', current, current.caller_id, current.short_description);
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-03-12 08:37:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;22b9fa0793300210303e74418bba1070&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;OnHold Changed&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_22b9fa0793300210303e74418bba1070&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-12 08:37:01&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=22b9fa0793300210303e74418bba1070"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>747370560</payload_hash>
+<remote_update_set display_value="Training Update Set">f45acf0793700210303e74418bba104d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-03-12 09:40:31</sys_created_on>
+<sys_id>745acf0793700210303e74418bba104e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e31ced0cc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-03-12 09:40:31</sys_updated_on>
+<table>incident</table>
+<target_name>OnHold Changed</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>32cb7a476a3002109d7d61fb1f632057</update_guid>
+<update_guid_history>32cb7a476a3002109d7d61fb1f632057:747370560</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_register_68b8fac393300210303e74418bba1036</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><description/><event_name>inc.from.onHold.change</event_name><fired_by>Business Rule - OnHold Changed</fired_by><queue/><suffix/><sys_class_name>sysevent_register</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-12 08:27:12</sys_created_on><sys_id>68b8fac393300210303e74418bba1036</sys_id><sys_mod_count>0</sys_mod_count><sys_name>inc.from.onHold.change</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysevent_register_68b8fac393300210303e74418bba1036</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-12 08:27:12</sys_updated_on><table>incident</table></sysevent_register></record_update>]]></payload>
+<payload_hash>-1159247701</payload_hash>
+<remote_update_set display_value="Training Update Set">f45acf0793700210303e74418bba104d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-03-12 09:40:31</sys_created_on>
+<sys_id>b05acf0793700210303e74418bba104e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e31c5d3d80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-03-12 09:40:31</sys_updated_on>
+<table>incident</table>
+<target_name>inc.from.onHold.change</target_name>
+<type>Event Registration</type>
+<update_domain>global</update_domain>
+<update_guid>ba89f607de300210c030fbd43bd479dc</update_guid>
+<update_guid_history>ba89f607de300210c030fbd43bd479dc:-1159247701</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_03ecfa0b93300210303e74418bba1086</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;inc.from.onHold.change&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Short description: ${short_description}&lt;/p&gt;
+&lt;p&gt;State: ${state}&lt;/p&gt;
+&lt;p&gt;Updated: ${sys_updated_on}&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Notification onHold change&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;assignment_group&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users&gt;6816f79cc0a8016401c5a33be04be441,681b365ec0a80164000fb0b05854a0cd&lt;/recipient_users&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Incident status changed from onHold&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-03-12 09:30:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;03ecfa0b93300210303e74418bba1086&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notification onHold change&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_03ecfa0b93300210303e74418bba1086&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-12 09:30:50&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1405950960</payload_hash>
+<remote_update_set display_value="Training Update Set">f45acf0793700210303e74418bba104d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-03-12 09:40:31</sys_created_on>
+<sys_id>f85acf0793700210303e74418bba104d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e320015c00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-03-12 09:40:31</sys_updated_on>
+<table>incident</table>
+<target_name>Notification onHold change</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>03180307027002103a67663088a7c4d1</update_guid>
+<update_guid_history>03180307027002103a67663088a7c4d1:1405950960</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
