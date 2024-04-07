@@ -19,3 +19,12 @@ while (incidentRecord.next()) {
 }
 
 gs.info(incidentRecord.getRowCount());
+
+var incRecords = new GlideRecord('incident');
+
+incRecords.addActiveQuery();
+incRecords.query();
+
+while (incRecords.next()) {
+    gs.info(incRecords.number + ' - ' + incRecords.short_description);
+}
