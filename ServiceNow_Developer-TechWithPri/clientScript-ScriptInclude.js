@@ -28,7 +28,7 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     ga.getXMLAnswer(fetchCount);
 
     function fetchCount(response) {
-        g_form.setValue('u_assignements', parseInt(response));
+        g_form.setValue('u_assignments', response);
     }
 
 }
