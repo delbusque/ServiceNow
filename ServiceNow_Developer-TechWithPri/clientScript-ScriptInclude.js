@@ -11,6 +11,19 @@ incidentDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
         return gr.getRowCount();
     },
+    autoAssignTo: function () {
+        var members = [];
+
+        var gr = new GlideRecord('sys_user_grmember');
+        gr.addQuery('group', this.getParameter('sysparm_assignment_group'));
+        gr.query();
+
+        while (gr.next()) {
+            members.push(gr.user.toString());
+        }
+
+        return JSON.stringify(members[Math.floor(Math.random() * members.length)]);
+    },
 
     type: 'incidentDetails'
 });
