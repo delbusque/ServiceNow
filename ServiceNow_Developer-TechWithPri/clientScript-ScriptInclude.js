@@ -25,6 +25,15 @@ incidentDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
         return JSON.stringify(members[Math.floor(Math.random() * members.length)]);
     },
 
+    filterAssignmentGroups: function (category) {
+        if (category == 'hardware') {
+            return 'sys_idIN' + gs.getProperty('sys_id_HardwareGroup');
+        }
+        else if (category == 'network') {
+            return 'sys_idIN' + gs.getProperty('sys_id_NetworkGroup') + ',' + gs.getProperty('sys_id_NetworkCAB');
+        }
+    },
+
     type: 'incidentDetails'
 });
 
